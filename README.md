@@ -5,8 +5,9 @@ In the paper, we tested eight DNN models (MNIST-LeNet, CIFAR10-QUICK, CIFAR100-Q
 
 We implemented the following methods in the Caffe framework: our retraining, the ensemble of DNNs trained with random initializations (RI), RI that uses the same number of iteration as retraining (RI-LongIters), Bagging, AdaBoost, error correcting output codes (ECOC), N-ary ECOC, horizontal voting (HV) and snapshot ensemble (SE).
 
-Below I explain how I trained deep neural networks for my proposed method "retraining" and the compared methods. 
+Below I explain how I traine a large number of deep neural networks for my proposed method "retraining" and the compared methods. 
  
 Note that among the compared methods, (Group A) RI, RI-LongIters, Retraining, Bagging, AdaBoost, HV and SE do not need to change the output codes (i.e., change the class labels of data, for instance, by mering the classes into meta-classes), while (Group B) ECOC and N-ary ECOC needed. 
 
+# Retraining 
 
