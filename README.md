@@ -6,9 +6,10 @@ We implemented the following methods in the Caffe framework: our retraining, the
 We tested eight DNN models (MNIST-LeNet, CIFAR10-QUICK, CIFAR100-QUICK, SVHN, CIFAR100-NIN, CIFAR100-DenseNet40, FLOWER102-AlexNet and ILSVRC2012-NIN). 
 
 Ensemble learning trains a number of classifiers (called base models or base learners) and conbime them to make predictions. An ensemble learning method typically consistes the floowing steps. 
-0. training base models using training data
-1. making predictions on test data for the trained base models 
-2. combining votes
+
+0. Training base models using training data
+1. Making predictions on test data for the trained base models 
+2. Combining votes
 
 Here we only explain the first step, i.e., how I traine a large number of deep neural networks for my proposed method "retraining" and the compared methods. The codes for Step 2 and Step 3 are provided here [step 2 Caffe + Shell] [step 3 Matlab].
 Below we use CIFAR10-QUICK as an example to explain the training processes.
