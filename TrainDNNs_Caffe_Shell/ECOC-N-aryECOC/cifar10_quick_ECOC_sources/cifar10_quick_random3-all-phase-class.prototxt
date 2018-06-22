@@ -1,0 +1,2604 @@
+name: "cifar10_quick"
+global_group_learn_iter: 10000
+num_class: 10 #the total number of the leaf classes for the whole dataset, a global variable, do not change as phases change
+other_group_member_loss_weight: 0.1
+class_group_single_phase {
+	phase_name: "phase-0"
+	phase_id: 0
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 8 #8
+		member: 7 #7
+		member: 3 #3
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 1 #1
+		member: 6 #6
+		member: 9 #9
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 5 #5
+		member: 0 #0
+		member: 4 #4
+		member: 2 #2
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-1"
+	phase_id: 1
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 6 #6
+		member: 0 #0
+		member: 8 #8
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 2 #2
+		member: 5 #5
+		member: 1 #1
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 4 #4
+		member: 3 #3
+		member: 9 #9
+		member: 7 #7
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-2"
+	phase_id: 2
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 5 #5
+		member: 2 #2
+		member: 4 #4
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 0 #0
+		member: 7 #7
+		member: 1 #1
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 9 #9
+		member: 3 #3
+		member: 8 #8
+		member: 6 #6
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-3"
+	phase_id: 3
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 1 #1
+		member: 6 #6
+		member: 9 #9
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 8 #8
+		member: 7 #7
+		member: 0 #0
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 4 #4
+		member: 3 #3
+		member: 5 #5
+		member: 2 #2
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-4"
+	phase_id: 4
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 6 #6
+		member: 8 #8
+		member: 3 #3
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 1 #1
+		member: 0 #0
+		member: 2 #2
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 7 #7
+		member: 9 #9
+		member: 4 #4
+		member: 5 #5
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-5"
+	phase_id: 5
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 3 #3
+		member: 1 #1
+		member: 6 #6
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 9 #9
+		member: 4 #4
+		member: 5 #5
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 7 #7
+		member: 8 #8
+		member: 2 #2
+		member: 0 #0
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-6"
+	phase_id: 6
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 3 #3
+		member: 4 #4
+		member: 0 #0
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 2 #2
+		member: 1 #1
+		member: 7 #7
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 8 #8
+		member: 5 #5
+		member: 6 #6
+		member: 9 #9
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-7"
+	phase_id: 7
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 6 #6
+		member: 7 #7
+		member: 4 #4
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 9 #9
+		member: 5 #5
+		member: 1 #1
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 8 #8
+		member: 3 #3
+		member: 0 #0
+		member: 2 #2
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-8"
+	phase_id: 8
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 7 #7
+		member: 0 #0
+		member: 6 #6
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 4 #4
+		member: 3 #3
+		member: 5 #5
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 1 #1
+		member: 8 #8
+		member: 2 #2
+		member: 9 #9
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-9"
+	phase_id: 9
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 7 #7
+		member: 6 #6
+		member: 8 #8
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 2 #2
+		member: 0 #0
+		member: 5 #5
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 4 #4
+		member: 9 #9
+		member: 3 #3
+		member: 1 #1
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-10"
+	phase_id: 10
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 2 #2
+		member: 6 #6
+		member: 7 #7
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 1 #1
+		member: 8 #8
+		member: 9 #9
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 5 #5
+		member: 0 #0
+		member: 3 #3
+		member: 4 #4
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-11"
+	phase_id: 11
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 6 #6
+		member: 0 #0
+		member: 5 #5
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 1 #1
+		member: 3 #3
+		member: 4 #4
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 2 #2
+		member: 8 #8
+		member: 7 #7
+		member: 9 #9
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-12"
+	phase_id: 12
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 7 #7
+		member: 6 #6
+		member: 2 #2
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 0 #0
+		member: 1 #1
+		member: 4 #4
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 3 #3
+		member: 8 #8
+		member: 9 #9
+		member: 5 #5
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-13"
+	phase_id: 13
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 9 #9
+		member: 7 #7
+		member: 1 #1
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 3 #3
+		member: 0 #0
+		member: 2 #2
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 8 #8
+		member: 4 #4
+		member: 6 #6
+		member: 5 #5
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-14"
+	phase_id: 14
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 6 #6
+		member: 7 #7
+		member: 1 #1
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 4 #4
+		member: 0 #0
+		member: 3 #3
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 5 #5
+		member: 9 #9
+		member: 8 #8
+		member: 2 #2
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-15"
+	phase_id: 15
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 4 #4
+		member: 2 #2
+		member: 8 #8
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 1 #1
+		member: 6 #6
+		member: 0 #0
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 5 #5
+		member: 9 #9
+		member: 7 #7
+		member: 3 #3
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-16"
+	phase_id: 16
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 1 #1
+		member: 5 #5
+		member: 7 #7
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 9 #9
+		member: 4 #4
+		member: 2 #2
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 6 #6
+		member: 8 #8
+		member: 0 #0
+		member: 3 #3
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-17"
+	phase_id: 17
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 7 #7
+		member: 3 #3
+		member: 8 #8
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 0 #0
+		member: 9 #9
+		member: 1 #1
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 5 #5
+		member: 4 #4
+		member: 6 #6
+		member: 2 #2
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-18"
+	phase_id: 18
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 6 #6
+		member: 1 #1
+		member: 9 #9
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 0 #0
+		member: 7 #7
+		member: 8 #8
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 4 #4
+		member: 3 #3
+		member: 5 #5
+		member: 2 #2
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-19"
+	phase_id: 19
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 4 #4
+		member: 6 #6
+		member: 2 #2
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 8 #8
+		member: 7 #7
+		member: 0 #0
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 3 #3
+		member: 9 #9
+		member: 5 #5
+		member: 1 #1
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-20"
+	phase_id: 20
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 6 #6
+		member: 8 #8
+		member: 3 #3
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 4 #4
+		member: 1 #1
+		member: 0 #0
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 9 #9
+		member: 2 #2
+		member: 5 #5
+		member: 7 #7
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-21"
+	phase_id: 21
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 5 #5
+		member: 6 #6
+		member: 9 #9
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 2 #2
+		member: 0 #0
+		member: 3 #3
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 8 #8
+		member: 1 #1
+		member: 4 #4
+		member: 7 #7
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-22"
+	phase_id: 22
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 9 #9
+		member: 7 #7
+		member: 1 #1
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 5 #5
+		member: 3 #3
+		member: 2 #2
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 4 #4
+		member: 6 #6
+		member: 0 #0
+		member: 8 #8
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-23"
+	phase_id: 23
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 2 #2
+		member: 9 #9
+		member: 3 #3
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 1 #1
+		member: 6 #6
+		member: 7 #7
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 4 #4
+		member: 5 #5
+		member: 8 #8
+		member: 0 #0
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-24"
+	phase_id: 24
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 1 #1
+		member: 7 #7
+		member: 2 #2
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 0 #0
+		member: 6 #6
+		member: 3 #3
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 4 #4
+		member: 9 #9
+		member: 5 #5
+		member: 8 #8
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-25"
+	phase_id: 25
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 8 #8
+		member: 0 #0
+		member: 5 #5
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 6 #6
+		member: 1 #1
+		member: 7 #7
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 3 #3
+		member: 9 #9
+		member: 4 #4
+		member: 2 #2
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-26"
+	phase_id: 26
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 9 #9
+		member: 3 #3
+		member: 2 #2
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 5 #5
+		member: 4 #4
+		member: 0 #0
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 1 #1
+		member: 8 #8
+		member: 7 #7
+		member: 6 #6
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-27"
+	phase_id: 27
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 0 #0
+		member: 5 #5
+		member: 2 #2
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 1 #1
+		member: 8 #8
+		member: 6 #6
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 9 #9
+		member: 7 #7
+		member: 3 #3
+		member: 4 #4
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-28"
+	phase_id: 28
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 4 #4
+		member: 8 #8
+		member: 5 #5
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 7 #7
+		member: 1 #1
+		member: 3 #3
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 6 #6
+		member: 2 #2
+		member: 9 #9
+		member: 0 #0
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-29"
+	phase_id: 29
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 9 #9
+		member: 7 #7
+		member: 2 #2
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 3 #3
+		member: 8 #8
+		member: 6 #6
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 0 #0
+		member: 1 #1
+		member: 4 #4
+		member: 5 #5
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-30"
+	phase_id: 30
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 0 #0
+		member: 6 #6
+		member: 4 #4
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 1 #1
+		member: 5 #5
+		member: 3 #3
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 9 #9
+		member: 2 #2
+		member: 7 #7
+		member: 8 #8
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-31"
+	phase_id: 31
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 8 #8
+		member: 2 #2
+		member: 0 #0
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 1 #1
+		member: 6 #6
+		member: 7 #7
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 3 #3
+		member: 4 #4
+		member: 9 #9
+		member: 5 #5
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-32"
+	phase_id: 32
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 8 #8
+		member: 1 #1
+		member: 5 #5
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 9 #9
+		member: 0 #0
+		member: 7 #7
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 6 #6
+		member: 3 #3
+		member: 4 #4
+		member: 2 #2
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-33"
+	phase_id: 33
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 0 #0
+		member: 2 #2
+		member: 5 #5
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 6 #6
+		member: 9 #9
+		member: 7 #7
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 1 #1
+		member: 4 #4
+		member: 8 #8
+		member: 3 #3
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-34"
+	phase_id: 34
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 6 #6
+		member: 1 #1
+		member: 9 #9
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 8 #8
+		member: 2 #2
+		member: 0 #0
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 7 #7
+		member: 3 #3
+		member: 5 #5
+		member: 4 #4
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-35"
+	phase_id: 35
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 0 #0
+		member: 3 #3
+		member: 2 #2
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 4 #4
+		member: 5 #5
+		member: 8 #8
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 9 #9
+		member: 6 #6
+		member: 7 #7
+		member: 1 #1
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-36"
+	phase_id: 36
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 7 #7
+		member: 8 #8
+		member: 6 #6
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 9 #9
+		member: 4 #4
+		member: 0 #0
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 1 #1
+		member: 3 #3
+		member: 5 #5
+		member: 2 #2
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-37"
+	phase_id: 37
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 2 #2
+		member: 4 #4
+		member: 5 #5
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 1 #1
+		member: 0 #0
+		member: 3 #3
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 9 #9
+		member: 6 #6
+		member: 7 #7
+		member: 8 #8
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-38"
+	phase_id: 38
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 8 #8
+		member: 6 #6
+		member: 3 #3
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 4 #4
+		member: 9 #9
+		member: 5 #5
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 2 #2
+		member: 1 #1
+		member: 7 #7
+		member: 0 #0
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-39"
+	phase_id: 39
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 6 #6
+		member: 7 #7
+		member: 1 #1
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 9 #9
+		member: 2 #2
+		member: 3 #3
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 0 #0
+		member: 4 #4
+		member: 8 #8
+		member: 5 #5
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-40"
+	phase_id: 40
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 4 #4
+		member: 6 #6
+		member: 5 #5
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 0 #0
+		member: 3 #3
+		member: 1 #1
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 8 #8
+		member: 9 #9
+		member: 2 #2
+		member: 7 #7
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-41"
+	phase_id: 41
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 4 #4
+		member: 1 #1
+		member: 7 #7
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 2 #2
+		member: 3 #3
+		member: 5 #5
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 6 #6
+		member: 0 #0
+		member: 9 #9
+		member: 8 #8
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-42"
+	phase_id: 42
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 0 #0
+		member: 2 #2
+		member: 5 #5
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 1 #1
+		member: 6 #6
+		member: 9 #9
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 4 #4
+		member: 3 #3
+		member: 8 #8
+		member: 7 #7
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-43"
+	phase_id: 43
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 7 #7
+		member: 4 #4
+		member: 9 #9
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 0 #0
+		member: 5 #5
+		member: 1 #1
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 3 #3
+		member: 2 #2
+		member: 6 #6
+		member: 8 #8
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-44"
+	phase_id: 44
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 7 #7
+		member: 8 #8
+		member: 4 #4
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 9 #9
+		member: 2 #2
+		member: 1 #1
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 3 #3
+		member: 6 #6
+		member: 0 #0
+		member: 5 #5
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-45"
+	phase_id: 45
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 0 #0
+		member: 6 #6
+		member: 8 #8
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 1 #1
+		member: 9 #9
+		member: 4 #4
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 3 #3
+		member: 2 #2
+		member: 5 #5
+		member: 7 #7
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-46"
+	phase_id: 46
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 2 #2
+		member: 9 #9
+		member: 0 #0
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 8 #8
+		member: 7 #7
+		member: 1 #1
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 3 #3
+		member: 4 #4
+		member: 5 #5
+		member: 6 #6
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-47"
+	phase_id: 47
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 3 #3
+		member: 6 #6
+		member: 9 #9
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 0 #0
+		member: 5 #5
+		member: 1 #1
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 8 #8
+		member: 4 #4
+		member: 2 #2
+		member: 7 #7
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-48"
+	phase_id: 48
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 8 #8
+		member: 7 #7
+		member: 2 #2
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 4 #4
+		member: 5 #5
+		member: 9 #9
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 1 #1
+		member: 6 #6
+		member: 3 #3
+		member: 0 #0
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-49"
+	phase_id: 49
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 2 #2
+		member: 4 #4
+		member: 9 #9
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 8 #8
+		member: 5 #5
+		member: 7 #7
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 1 #1
+		member: 3 #3
+		member: 6 #6
+		member: 0 #0
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-50"
+	phase_id: 50
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 2 #2
+		member: 7 #7
+		member: 0 #0
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 4 #4
+		member: 1 #1
+		member: 5 #5
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 6 #6
+		member: 3 #3
+		member: 8 #8
+		member: 9 #9
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-51"
+	phase_id: 51
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 6 #6
+		member: 4 #4
+		member: 2 #2
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 8 #8
+		member: 7 #7
+		member: 5 #5
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 0 #0
+		member: 9 #9
+		member: 3 #3
+		member: 1 #1
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-52"
+	phase_id: 52
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 1 #1
+		member: 0 #0
+		member: 5 #5
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 9 #9
+		member: 7 #7
+		member: 6 #6
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 8 #8
+		member: 2 #2
+		member: 3 #3
+		member: 4 #4
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-53"
+	phase_id: 53
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 8 #8
+		member: 3 #3
+		member: 0 #0
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 2 #2
+		member: 5 #5
+		member: 1 #1
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 9 #9
+		member: 7 #7
+		member: 4 #4
+		member: 6 #6
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-54"
+	phase_id: 54
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 3 #3
+		member: 5 #5
+		member: 6 #6
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 9 #9
+		member: 2 #2
+		member: 1 #1
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 0 #0
+		member: 4 #4
+		member: 8 #8
+		member: 7 #7
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-55"
+	phase_id: 55
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 9 #9
+		member: 0 #0
+		member: 5 #5
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 7 #7
+		member: 4 #4
+		member: 1 #1
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 6 #6
+		member: 8 #8
+		member: 3 #3
+		member: 2 #2
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-56"
+	phase_id: 56
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 8 #8
+		member: 2 #2
+		member: 4 #4
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 5 #5
+		member: 3 #3
+		member: 6 #6
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 0 #0
+		member: 7 #7
+		member: 9 #9
+		member: 1 #1
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-57"
+	phase_id: 57
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 3 #3
+		member: 8 #8
+		member: 1 #1
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 2 #2
+		member: 0 #0
+		member: 9 #9
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 7 #7
+		member: 6 #6
+		member: 5 #5
+		member: 4 #4
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-58"
+	phase_id: 58
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 1 #1
+		member: 0 #0
+		member: 7 #7
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 2 #2
+		member: 6 #6
+		member: 8 #8
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 5 #5
+		member: 4 #4
+		member: 3 #3
+		member: 9 #9
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-59"
+	phase_id: 59
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 7 #7
+		member: 4 #4
+		member: 8 #8
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 9 #9
+		member: 6 #6
+		member: 5 #5
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 1 #1
+		member: 3 #3
+		member: 2 #2
+		member: 0 #0
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-60"
+	phase_id: 60
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 4 #4
+		member: 3 #3
+		member: 6 #6
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 9 #9
+		member: 1 #1
+		member: 5 #5
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 0 #0
+		member: 2 #2
+		member: 8 #8
+		member: 7 #7
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-61"
+	phase_id: 61
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 0 #0
+		member: 4 #4
+		member: 5 #5
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 6 #6
+		member: 9 #9
+		member: 1 #1
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 7 #7
+		member: 8 #8
+		member: 2 #2
+		member: 3 #3
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-62"
+	phase_id: 62
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 4 #4
+		member: 3 #3
+		member: 9 #9
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 6 #6
+		member: 1 #1
+		member: 2 #2
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 7 #7
+		member: 0 #0
+		member: 8 #8
+		member: 5 #5
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-63"
+	phase_id: 63
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 8 #8
+		member: 5 #5
+		member: 0 #0
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 4 #4
+		member: 1 #1
+		member: 7 #7
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 3 #3
+		member: 6 #6
+		member: 9 #9
+		member: 2 #2
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-64"
+	phase_id: 64
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 2 #2
+		member: 8 #8
+		member: 0 #0
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 5 #5
+		member: 6 #6
+		member: 9 #9
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 7 #7
+		member: 3 #3
+		member: 1 #1
+		member: 4 #4
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-65"
+	phase_id: 65
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 1 #1
+		member: 8 #8
+		member: 6 #6
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 5 #5
+		member: 0 #0
+		member: 7 #7
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 2 #2
+		member: 4 #4
+		member: 9 #9
+		member: 3 #3
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-66"
+	phase_id: 66
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 3 #3
+		member: 2 #2
+		member: 9 #9
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 4 #4
+		member: 1 #1
+		member: 0 #0
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 7 #7
+		member: 8 #8
+		member: 5 #5
+		member: 6 #6
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-67"
+	phase_id: 67
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 7 #7
+		member: 4 #4
+		member: 5 #5
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 2 #2
+		member: 6 #6
+		member: 9 #9
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 0 #0
+		member: 8 #8
+		member: 1 #1
+		member: 3 #3
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-68"
+	phase_id: 68
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 8 #8
+		member: 7 #7
+		member: 9 #9
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 4 #4
+		member: 5 #5
+		member: 0 #0
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 6 #6
+		member: 3 #3
+		member: 1 #1
+		member: 2 #2
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-69"
+	phase_id: 69
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 9 #9
+		member: 8 #8
+		member: 4 #4
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 3 #3
+		member: 0 #0
+		member: 7 #7
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 2 #2
+		member: 5 #5
+		member: 6 #6
+		member: 1 #1
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-70"
+	phase_id: 70
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 3 #3
+		member: 7 #7
+		member: 5 #5
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 9 #9
+		member: 8 #8
+		member: 4 #4
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 1 #1
+		member: 6 #6
+		member: 0 #0
+		member: 2 #2
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-71"
+	phase_id: 71
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 4 #4
+		member: 8 #8
+		member: 7 #7
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 2 #2
+		member: 3 #3
+		member: 9 #9
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 6 #6
+		member: 5 #5
+		member: 1 #1
+		member: 0 #0
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-72"
+	phase_id: 72
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 2 #2
+		member: 3 #3
+		member: 8 #8
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 6 #6
+		member: 5 #5
+		member: 9 #9
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 1 #1
+		member: 7 #7
+		member: 4 #4
+		member: 0 #0
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-73"
+	phase_id: 73
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 5 #5
+		member: 9 #9
+		member: 8 #8
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 2 #2
+		member: 7 #7
+		member: 6 #6
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 3 #3
+		member: 0 #0
+		member: 1 #1
+		member: 4 #4
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-74"
+	phase_id: 74
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 2 #2
+		member: 4 #4
+		member: 7 #7
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 9 #9
+		member: 8 #8
+		member: 0 #0
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 3 #3
+		member: 6 #6
+		member: 5 #5
+		member: 1 #1
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-75"
+	phase_id: 75
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 8 #8
+		member: 2 #2
+		member: 5 #5
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 1 #1
+		member: 6 #6
+		member: 3 #3
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 7 #7
+		member: 0 #0
+		member: 4 #4
+		member: 9 #9
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-76"
+	phase_id: 76
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 2 #2
+		member: 9 #9
+		member: 3 #3
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 4 #4
+		member: 1 #1
+		member: 8 #8
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 0 #0
+		member: 6 #6
+		member: 7 #7
+		member: 5 #5
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-77"
+	phase_id: 77
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 2 #2
+		member: 3 #3
+		member: 1 #1
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 9 #9
+		member: 5 #5
+		member: 4 #4
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 6 #6
+		member: 0 #0
+		member: 8 #8
+		member: 7 #7
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-78"
+	phase_id: 78
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 2 #2
+		member: 1 #1
+		member: 3 #3
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 8 #8
+		member: 5 #5
+		member: 7 #7
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 9 #9
+		member: 4 #4
+		member: 6 #6
+		member: 0 #0
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-79"
+	phase_id: 79
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 1 #1
+		member: 3 #3
+		member: 8 #8
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 5 #5
+		member: 9 #9
+		member: 6 #6
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 4 #4
+		member: 7 #7
+		member: 0 #0
+		member: 2 #2
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-80"
+	phase_id: 80
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 6 #6
+		member: 1 #1
+		member: 0 #0
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 2 #2
+		member: 5 #5
+		member: 8 #8
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 4 #4
+		member: 9 #9
+		member: 3 #3
+		member: 7 #7
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-81"
+	phase_id: 81
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 8 #8
+		member: 1 #1
+		member: 7 #7
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 4 #4
+		member: 9 #9
+		member: 0 #0
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 3 #3
+		member: 5 #5
+		member: 2 #2
+		member: 6 #6
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-82"
+	phase_id: 82
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 8 #8
+		member: 9 #9
+		member: 7 #7
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 2 #2
+		member: 6 #6
+		member: 5 #5
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 1 #1
+		member: 3 #3
+		member: 0 #0
+		member: 4 #4
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-83"
+	phase_id: 83
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 5 #5
+		member: 2 #2
+		member: 6 #6
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 0 #0
+		member: 9 #9
+		member: 7 #7
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 8 #8
+		member: 1 #1
+		member: 4 #4
+		member: 3 #3
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-84"
+	phase_id: 84
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 0 #0
+		member: 6 #6
+		member: 7 #7
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 8 #8
+		member: 2 #2
+		member: 5 #5
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 4 #4
+		member: 9 #9
+		member: 1 #1
+		member: 3 #3
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-85"
+	phase_id: 85
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 5 #5
+		member: 6 #6
+		member: 0 #0
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 9 #9
+		member: 4 #4
+		member: 7 #7
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 8 #8
+		member: 1 #1
+		member: 2 #2
+		member: 3 #3
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-86"
+	phase_id: 86
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 3 #3
+		member: 9 #9
+		member: 8 #8
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 6 #6
+		member: 0 #0
+		member: 5 #5
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 1 #1
+		member: 4 #4
+		member: 7 #7
+		member: 2 #2
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-87"
+	phase_id: 87
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 8 #8
+		member: 6 #6
+		member: 7 #7
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 2 #2
+		member: 9 #9
+		member: 1 #1
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 0 #0
+		member: 3 #3
+		member: 5 #5
+		member: 4 #4
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-88"
+	phase_id: 88
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 0 #0
+		member: 8 #8
+		member: 5 #5
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 4 #4
+		member: 1 #1
+		member: 6 #6
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 9 #9
+		member: 3 #3
+		member: 2 #2
+		member: 7 #7
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-89"
+	phase_id: 89
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 1 #1
+		member: 5 #5
+		member: 4 #4
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 8 #8
+		member: 6 #6
+		member: 2 #2
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 0 #0
+		member: 9 #9
+		member: 7 #7
+		member: 3 #3
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-90"
+	phase_id: 90
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 9 #9
+		member: 4 #4
+		member: 0 #0
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 2 #2
+		member: 3 #3
+		member: 6 #6
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 7 #7
+		member: 1 #1
+		member: 8 #8
+		member: 5 #5
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-91"
+	phase_id: 91
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 5 #5
+		member: 6 #6
+		member: 1 #1
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 7 #7
+		member: 3 #3
+		member: 2 #2
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 4 #4
+		member: 9 #9
+		member: 8 #8
+		member: 0 #0
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-92"
+	phase_id: 92
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 4 #4
+		member: 7 #7
+		member: 9 #9
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 6 #6
+		member: 1 #1
+		member: 2 #2
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 8 #8
+		member: 3 #3
+		member: 5 #5
+		member: 0 #0
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-93"
+	phase_id: 93
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 0 #0
+		member: 8 #8
+		member: 9 #9
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 2 #2
+		member: 3 #3
+		member: 6 #6
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 4 #4
+		member: 5 #5
+		member: 1 #1
+		member: 7 #7
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-94"
+	phase_id: 94
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 0 #0
+		member: 3 #3
+		member: 8 #8
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 9 #9
+		member: 1 #1
+		member: 5 #5
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 4 #4
+		member: 2 #2
+		member: 6 #6
+		member: 7 #7
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-95"
+	phase_id: 95
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 7 #7
+		member: 5 #5
+		member: 1 #1
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 9 #9
+		member: 8 #8
+		member: 0 #0
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 4 #4
+		member: 6 #6
+		member: 3 #3
+		member: 2 #2
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-96"
+	phase_id: 96
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 6 #6
+		member: 4 #4
+		member: 5 #5
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 0 #0
+		member: 8 #8
+		member: 2 #2
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 7 #7
+		member: 9 #9
+		member: 3 #3
+		member: 1 #1
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-97"
+	phase_id: 97
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 3 #3
+		member: 8 #8
+		member: 5 #5
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 6 #6
+		member: 7 #7
+		member: 2 #2
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 4 #4
+		member: 9 #9
+		member: 1 #1
+		member: 0 #0
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-98"
+	phase_id: 98
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 2 #2
+		member: 9 #9
+		member: 7 #7
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 1 #1
+		member: 8 #8
+		member: 4 #4
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 0 #0
+		member: 3 #3
+		member: 6 #6
+		member: 5 #5
+	}
+}
+class_group_single_phase {
+	phase_name: "phase-99"
+	phase_id: 99
+	sub_group { 
+		sub_group_id: 0
+		sub_group_name: "sub-group0"
+		member: 5 #5
+		member: 3 #3
+		member: 9 #9
+	}
+	sub_group { 
+		sub_group_id: 1
+		sub_group_name: "sub-group1"
+		member: 6 #6
+		member: 0 #0
+		member: 7 #7
+	}
+	sub_group { 
+		sub_group_id: 2
+		sub_group_name: "sub-group2"
+		member: 2 #2
+		member: 8 #8
+		member: 1 #1
+		member: 4 #4
+	}
+}
