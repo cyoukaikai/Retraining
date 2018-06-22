@@ -17,23 +17,48 @@ An ensemble learning method typically consistes the following steps.
 Below we will beriefly explain how we conducted these three steps. 
 
 ## Training base models using training data
-Caffe is typically designed for training a single DNN, rather than ensemble learning of DNNs, in which a large number of DNN base models may be needed to train.
-Let N_M be the number of models to train for an ensmble learning method. When N_M is large (e.g., N_M = 100), manully training N_M DNNs may not be a good idea.
-To deal with this issue, we use a shell script (namely, ) to automatically geneate the prototxt files (i.e., solver.prototxt and train_val.prototxt), train N_M DNNs and save the parameters (snapshots) of the trained DNNs.
+There are two issues related to training a number of DNNs for the compared enesmble learning methods. 
+- Issue 1, efficiently training DNNs
+- Issue 2, preparing the training data for Bagging, AdaBoost, ECOC, N-ary ECOC
 
- 
-Because of the following reasons, each method has a spearate file to configure the training data and their labels, the maximum number of iteratons, 
-Different methods may have different requirement for preparing the training. For instance, Bagging, AdaBoost sample the training data randomly with replacement and based on incorrect/correct predictions of the earilier models, respectively; ECOC and N-ary ECOC change the output codes. 
-Different methods may have different setting for the learning rate and its decay policy.
+Issue 1 does not need to modify the Caffe framework, while Issue 2 needs.
+
+For Issue 1, Caffe is originally designed for training a single DNN rather than training a number of DNNs.
+Let N_M be the number of models to train for an ensmble learning method. When N_M is large (e.g., N_M = 100), manully training N_M DNNs may not be a good idea.
+To deal with this issue, we use a shell script (namely, create_benchmark_phase-prototxt.sh) to automatically geneate the prototxt files (i.e., solver.prototxt and train_val.prototxt), train N_M DNNs and save the parameters (snapshots) of the trained DNNs.
+The idea of using a shell script is applied to all the compared methods.
+By using the Shell script, we can set where to load the training data and their labels, the maximum number of iteratons (RI-LongIters ), the initial learning rates and its decay policy, the number (N_M) of base models to train, the number (N_R) of rounds to train (N_R = 1 in default, but for Retraining, Snapshot, RI-LongIters, N_R > 1) and so on.  
+
+
+For Issue 2, Bagging, AdaBoost, ECOC, N-ary ECOChave different requirement for preparing the training. 
+Bagging, AdaBoost sample the training data randomly with replacement and based on incorrect/correct predictions of the earilier models, respectively; ECOC and N-ary ECOC change the output codes. 
+We provide the files to generate the training data for Bagging and AdaBoost in the directory bagging_100run and adaboost_100run, respectively. 
+
+The base models of ECOC and N-ary ECOC are trained (estimating the loss and gradients) using meta-class labels rather than class labels. Each base model has different encoding information (the way of merging classes into meta-classes). 
 
 
 ## Making predictions on test data for the trained base models 
 
+We can use the Caffe python interface to make predictions. However, we have to specify how to conduct the processing, which is defined in the train_val.prototxt file, in the resulting Python code for each DNNs. 
+
+We instead can display and record the predictions of Caffe in a log file and later extract the predictions using the Shell script.
+An advantage of this solution is that different DNNs can use the same precesses.
+
+
 ## Combining votes 
 
-Note that among the compared methods, (Group A) RI, RI-LongIters, Retraining, Bagging, AdaBoost, HV and SE do not need to change the output codes (i.e., change the class labels of data by, for instance,merging the classes into meta-classes), while (Group B) ECOC and N-ary ECOC needed. 
+The files in  CombineVotes_Matlab  contains the following functionalities.
 
-Basically, we do not need to modify the code to implement the Group A methods.
+- combined_voting
+1. majority voting
+2. weighted voting
+3. minimum Hamming distance
+4. weighted Hamming distance
+- extract_results (for comparing different methods).
+
+The workflow is 
+- load the predictions into mat format -> make ensemble predictions -> save results 
+
 
 ## Retraining 
 
