@@ -18,16 +18,14 @@ Below we will beriefly explain how we conducted these three steps.
 
 ## Training base models using training data
 There are two issues related to training a number of DNNs for the compared enesmble learning methods. 
-- Issue 1, efficiently training DNNs
-- Issue 2, preparing the training data for Bagging, AdaBoost, ECOC, N-ary ECOC
-
-Issue 1 does not need to modify the Caffe framework, while Issue 2 needs.
+Issue 1). efficiently training DNNs
+Issue 2). preparing the training data for Bagging, AdaBoost, ECOC, N-ary ECOC
 
 For Issue 1, Caffe is originally designed for training a single DNN rather than training a number of DNNs.
-Let N_M be the number of models to train for an ensmble learning method. When N_M is large (e.g., N_M = 100), manully training N_M DNNs may not be a good idea.
+Let N_M be the number of models to train for an ensmble learning method. When $N_M$ is large (e.g., $N_M$ = 100), manully training N_M DNNs may not be a good idea.
 To deal with this issue, we use a shell script (namely, create_benchmark_phase-prototxt.sh) to automatically geneate the prototxt files (i.e., solver.prototxt and train_val.prototxt), train N_M DNNs and save the parameters (snapshots) of the trained DNNs.
 The idea of using a shell script is applied to all the compared methods.
-By using the Shell script, we can set where to load the training data and their labels, the maximum number of iteratons (RI-LongIters ), the initial learning rates and its decay policy, the number (N_M) of base models to train, the number (N_R) of rounds to train (N_R = 1 in default, but for Retraining, Snapshot, RI-LongIters, N_R > 1) and so on.  
+By using the Shell script, we can set where to load the training data and their labels, the maximum number of iteratons (RI-LongIters ), the initial learning rates and its decay policy, the number ($N_M$) of base models to train, the number (N_R) of rounds to train (N_R = 1 in default, but for Retraining, Snapshot, RI-LongIters, N_R > 1) and so on.  
 
 
 For Issue 2, Bagging, AdaBoost, ECOC, N-ary ECOChave different requirement for preparing the training. 
@@ -49,18 +47,18 @@ An advantage of this solution is that different DNNs can use the same precesses.
 
 The files in  CombineVotes_Matlab  contains the following functionalities.
 
+
+- majority voting
+- weighted voting
+- minimum Hamming distance
+- weighted Hamming distance
 - combined_voting
-1. majority voting
-2. weighted voting
-3. minimum Hamming distance
-4. weighted Hamming distance
 - extract_results (for comparing different methods).
 
 The workflow is 
-- load the predictions into mat format -> make ensemble predictions -> save results 
+1). load the predictions into mat format 
+2). make ensemble predictions 
+3). save results 
 
 
-## Retraining 
-
-## ECOC and N-ary ECOC
 
