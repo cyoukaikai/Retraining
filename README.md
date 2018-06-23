@@ -18,8 +18,9 @@ Below we will beriefly explain how we conducted these three steps.
 
 ## Training base models using training data
 There are two issues related to training a number of DNNs for the compared enesmble learning methods. 
-Issue 1). efficiently training DNNs
-Issue 2). preparing the training data for Bagging, AdaBoost, ECOC, N-ary ECOC
+
+1). efficiently training DNNs
+2). preparing the training data for Bagging, AdaBoost, ECOC, N-ary ECOC
 
 For Issue 1, Caffe is originally designed for training a single DNN rather than training a number of DNNs.
 Let N_M be the number of models to train for an ensmble learning method. When $N_M$ is large (e.g., $N_M$ = 100), manully training N_M DNNs may not be a good idea.
@@ -56,9 +57,9 @@ The files in  CombineVotes_Matlab  contains the following functionalities.
 - extract_results (for comparing different methods).
 
 The workflow is 
-1). load the predictions into mat format 
-2). make ensemble predictions 
-3). save results 
+1. load the predictions into mat format 
+2. make ensemble predictions 
+3. save results 
 
 
 
